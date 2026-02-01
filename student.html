@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Study System</title>
+</head>
+<body>
+  <h1>Study Discipline System</h1>
+  <p>Setup in progress.</p>
+  <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+  import { getFirestore, doc, getDoc, updateDoc } 
+    from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
+ const firebaseConfig = {
+  apiKey: "AIzaSyCqlGYBsn80-RT9G72v0_eMxcwUwtKRpAQ",
+  authDomain: "finaldb-67.firebaseapp.com",
+  databaseURL: "https://finaldb-67-default-rtdb.firebaseio.com",
+  projectId: "finaldb-67",
+  storageBucket: "finaldb-67.firebasestorage.app",
+  messagingSenderId: "391080690140",
+  appId: "1:391080690140:web:b668e1ea34aac290414f19"
+};
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  console.log("Firestore connected (student)");
+
+</script>
+
+</body>
+</html>
